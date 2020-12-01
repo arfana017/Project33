@@ -1,7 +1,7 @@
-var Engine = Matter.Engine,
-  World = Matter.World,
-  Events = Matter.Events,
-  Bodies = Matter.Bodies;
+const Engine = Matter.Engine,
+ World = Matter.World,
+ Events = Matter.Events,
+ Bodies = Matter.Bodies;
  
 var particles
 var plinkos = [];
@@ -130,26 +130,22 @@ function draw() {
    {
      push();
      strokeWeight(1);
-     stroke("red")
-     textSize(60);
-     text("GAME OVER",200,250);
-     textSize(50);
-     stroke("yellow")
-     text("Press Space Key to Restart",100,340)
+     text("Game Over!",300,250);
+     text("Press Space to Restart",220,340)
      pop();
    }
 
    textSize(32);
-   text("500",15,550);
-   text("500",95,550);
-   text("500",95+80,550);
-   text("100",95+160,550);
-   text("100",95+240,550);
-   text("100",95+240+80,550);
-   text("100",95+240+160,550);
-   text("200",95+320+160,550);
-   text("200",95+320+240,550);
-   text("200",95+320+320,550);
+   text("500",10,550);
+   text("500",90,550);
+   text("500",90+80,550);
+   text("100",90+160,550);
+   text("100",90+240,550);
+   text("100",90+240+80,550);
+   text("100",90+240+160,550);
+   text("200",90+320+160,550);
+   text("200",90+320+240,550);
+   text("200",90+320+320,550);
 
    
 
